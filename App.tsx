@@ -5,6 +5,7 @@ import HomeScreen from "./src/screens/HomeScreen";
 import { RootStackParamList } from "./src/types/navigation";
 import PostDetailsScreen from "./src/screens/PostDetailsScreen";
 import NewPostScreen from "./src/screens/NewPostScreen";
+import ProfileFormScreen from "./src/screens/ProfileFormScreen";
 
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -27,6 +28,11 @@ export default function App() {
           name="NewPost"
           component={NewPostScreen}
           options={{ title: "Новый пост" }}
+        />
+        <Stack.Screen
+          name="ProfileForm"
+          component={ProfileFormScreen}
+          options={{ title: "Анкета пользователя" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

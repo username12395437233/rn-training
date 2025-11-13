@@ -27,9 +27,13 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
   useEffect(() => {
     navigation.setOptions({
       headerRight: () => (
-        <TouchableOpacity onPress={() => navigation.navigate("NewPost")}>
-          <Text style={styles.headerButton}>+ Новый</Text>
-        </TouchableOpacity>
+        <>
+          <TouchableOpacity onPress={() => navigation.navigate("NewPost")}>
+            <Text style={styles.headerButton}>+ Новый</Text>
+          </TouchableOpacity><TouchableOpacity onPress={() => navigation.navigate("ProfileForm")}>
+            <Text style={styles.headerButton}>Форма продвинутая</Text>
+          </TouchableOpacity>
+        </>
       ),
     });
   }, [navigation]);

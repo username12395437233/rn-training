@@ -7,4 +7,5 @@ export type RootStackParamList = {
     userId: number;
   };
   NewPost: undefined;
+  ProfileForm: undefined;
 };
