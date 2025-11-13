@@ -1,9 +1,10 @@
 export type RootStackParamList = {
   Home: undefined;
-  TaskDetails: {
-    id: string;
+  PostDetails: {
+    id: number;
     title: string;
-    description: string;
+    body: string;
+    userId: number;
   };
-  NewTask: undefined;
+  NewPost: undefined;
 };
